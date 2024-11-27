@@ -1,0 +1,200 @@
+// Header style
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  @include trans;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding-top: 44px;
+    padding-bottom: 36px;
+    @media(max-width: 980px) {
+      padding-top: 16px;
+      padding-bottom: 0;
+    }
+  }
+  &__logo {
+    position: relative;
+    width: 177px;
+    height: 45px;
+    z-index: 1;
+    img {
+      @include img-cn;
+    }
+  }
+  &__nav {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 41% calc(59% - 24px);
+    gap: 24px;
+    @include trans;
+    &.open {
+      left: 0;
+    }
+    @media (max-width: 1200px) {
+      grid-template-columns: 38% calc(62% - 24px);
+      gap: 24px;
+    }
+    @media(max-width: 980px) {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      display: block;
+      min-height: 100vh;
+      min-width: 320px;
+      width: 100%;
+      padding: 80px 16px;
+      padding-top: 140px;
+      background-color: var(--light, $light);
+    }
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1;
+    li {
+      @media(max-width: 980px) {
+        width: 100%;
+      }
+    }
+    a {
+      position: relative;
+      transition: color 0.3s ease-out;
+      &::after {
+        content: none;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        transform: translateY(-50%);
+        background: url(../img/arrow-menu.svg) center / contain no-repeat;
+        @media(max-width: 980px) {
+          content: '';
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        color: var(--light-blue, $light-blue);
+      }
+      @media(max-width: 980px) {
+        display: block;
+        width: 100%;
+      }
+    }
+    @media(max-width: 980px) {
+      align-items: flex-start;
+      gap: 24px;
+      margin-bottom: 48px;
+      font-size: 18px;
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+    padding-right: 24px;
+    @media(max-width: 980px) {
+      justify-content: flex-start;
+    }
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      padding: 12px;
+      border-radius: 100%;
+      background-color: var(--light, $light);
+      transition: background-color 0.3s ease-out;
+      &:hover {
+        background-color: var(--blue, $blue);
+        path {
+          fill: var(--light, $light);
+        }
+      }
+      @media(max-width: 980px) {
+        background-color: var(--blue, $blue);
+      }
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+    path {
+      transition: fill 0.3s ease-out;
+      @media(max-width: 980px) {
+        fill: var(--light, $light);
+      }
+    }
+  }
+  &__btn {
+    @media(max-width: 980px) {
+      display: none;
+    }
+  }
+  &__burger {
+    position: relative;
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 16px 12px;
+    border-radius: 13px;
+    background: var(--blue, $blue);
+    cursor: pointer;
+    @include trans;
+    span {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      height: 2px;
+      width: 100%;
+      pointer-events: none;
+      background-color: var(--light, $light);
+      @include trans;
+      &:nth-child(1){
+        top: 14px;
+        width: calc(90% - 20px);
+      }
+      &:nth-child(2){
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: calc(100% - 20px);
+      }
+      &:nth-child(3){
+        bottom: 14px;
+        width: calc(90% - 20px);
+      }
+    }
+    @media(max-width: 980px) {
+      display: block;
+    }
+  }
+  &.blue {
+    .header__btn {
+      color: var(--light, $light);
+      background-color: var(--blue, $blue);
+      &:hover {
+        color: var(--light, $light);
+        background-color: var(--green, $green);
+      }
+    }
+  }
+}

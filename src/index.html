@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Главная" })
+  <body>
+    @@include('html/header.html', {"class": ""})
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__container">
+            <div class="hero__wrap">
+              <h1 class="hero__title title-color">Здоровье вашего ребёнка&nbsp;&mdash; <strong>с&nbsp;заботой 
+                и&nbsp;комфортом</strong> на&nbsp;дому</h1>
+              <div class="hero__desc">
+                <p>Опытные педиатры приезжают к&nbsp;вам домой, чтобы ваши дети получали лучшую помощь в&nbsp;комфортной и&nbsp;безопасной обстановке. Без очередей, без риска заражения, без стресса.</p>
+              </div>
+              <a class="hero__btn button button_primary popup-btn">Вызвать врача</a>
+            </div>
+            <div class="hero__box">
+              <div class="hero__cards">
+                <a class="hero__card" href="">
+                  <div class="hero-card__img"><img src="@img/image-1.png" alt=""></div>
+                  <div class="hero-card__txt">Все наши врачи проходят тщательную проверку и&nbsp;имеют сертификаты, подтверждающие квалификацию</div>
+                </a>
+                <a class="hero__card" href="">
+                  <div class="hero-card__txt">Мы&nbsp;знаем, как важно для родителей выбрать надёжного врача, и&nbsp;готовы подтвердить наш уровень качества</div>
+                  <div class="hero-card__btn button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.99991 4C7.84835 4 7.70301 4.0602 7.59584 4.16737C7.48868 4.27453 7.42848 4.41988 7.42848 4.57143C7.42848 4.72298 7.48868 4.86833 7.59584 4.97549C7.70301 5.08266 7.84835 5.14286 7.99991 5.14286H18.0491L4.16732 19.0246C3.94423 19.2478 3.94423 19.6095 4.16732 19.8327C4.39047 20.0558 4.75224 20.0558 4.97538 19.8327L18.8571 5.95092V16.0001C18.8571 16.1516 18.9173 16.297 19.0245 16.4042C19.1317 16.5113 19.277 16.5715 19.4286 16.5715C19.5801 16.5715 19.7255 16.5113 19.8326 16.4042C19.9398 16.297 20 16.1516 20 16.0001V4.57149C20 4.41994 19.9398 4.2746 19.8326 4.16744C19.7255 4.06028 19.5801 4.00007 19.4286 4.00006L7.99991 4Z" fill="#121111"/>
+                    </svg>                      
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits section-pad-top anim-svg">
+        <div class="container">
+          <div class="benefits__container swiper-box">
+            <h2 class="benefits__title title-blue title-indent">Клиника полного цикла на&nbsp;дому</h2>
+            <div class="swiper mobileSwiper">
+              <div class="benefits__cards swiper-wrapper">
+                <div class="benefits__card swiper-slide">
+                  <div class="benefits__box">
+                    <h4 class="benefits__caption">Приедем вовремя</h4>
+                    <div class="benefits__txt">Как можно быстрее или в&nbsp;удобное для вас время</div>
+                  </div>
+                </div>
+                <div class="benefits__card swiper-slide">
+                  <div class="benefits__box">
+                    <h4 class="benefits__caption">Безопасно</h4>
+                    <div class="benefits__txt">Никаких рисков заражения&nbsp;&mdash; лечение проходит в&nbsp;комфортной и&nbsp;безопасной обстановке дома</div>
+                  </div>
+                </div>
+                <div class="benefits__card swiper-slide">
+                  <div class="benefits__box">
+                    <h4 class="benefits__caption">Доскональный осмотр</h4>
+                    <div class="benefits__txt">Врач работает по&nbsp;чек-листу, уделяя максимум внимания каждому</div>
+                  </div>
+                </div>
+                <div class="benefits__card swiper-slide">
+                  <div class="benefits__box">
+                    <h4 class="benefits__caption">Поддержка 24/7</h4>
+                    <div class="benefits__txt">Колл-центр всегда на&nbsp;связи, чтобы ответить на&nbsp;ваши вопросы или связать с&nbsp;врачем</div>
+                  </div>
+                </div>
+                <div class="benefits__card swiper-slide">
+                  <div class="benefits__box">
+                    <h4 class="benefits__caption">Гарантия</h4>
+                    <div class="benefits__txt">Команда проверяет КАЖДУЮ карточку больного: анамнез, диагноз, лечение</div>
+                  </div>
+                </div>
+                <div class="benefits__card swiper-slide">
+                  <div class="benefits__box">
+                    <h4 class="benefits__caption">Мы всегда рядом</h4>
+                    <div class="benefits__txt">Сопровождаем вас и&nbsp;ребенка до&nbsp;выздоровления</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="benefits__arrows">
+              <div class="button-prev benefits-button benefits-button-prev">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.22579 17.8195C9.44376 18.0602 9.80654 18.0602 10.0321 17.8195C10.2501 17.587 10.2501 17.2001 10.0321 16.9681L5.94347 12.607H19.4355C19.75 12.6064 20 12.3398 20 12.0043C20 11.6689 19.75 11.3936 19.4355 11.3936H5.94347L10.0321 7.04056C10.2501 6.79993 10.2501 6.41243 10.0321 6.18047C9.80654 5.93984 9.44325 5.93984 9.22579 6.18047L4.1692 11.574C3.9436 11.8065 3.9436 12.1935 4.1692 12.4254L9.22579 17.8195Z" fill="white"/>
+                </svg>                  
+              </div>
+              <div class="button-next benefits-button benefits-button-next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.7742 17.8195C14.5562 18.0602 14.1935 18.0602 13.9679 17.8195C13.7499 17.587 13.7499 17.2001 13.9679 16.9681L18.0565 12.607H4.5645C4.24998 12.6064 4 12.3398 4 12.0043C4 11.6689 4.24998 11.3936 4.5645 11.3936H18.0565L13.9679 7.04056C13.7499 6.79993 13.7499 6.41243 13.9679 6.18047C14.1935 5.93984 14.5567 5.93984 14.7742 6.18047L19.8308 11.574C20.0564 11.8065 20.0564 12.1935 19.8308 12.4254L14.7742 17.8195Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg class="back-svg" width="3207" height="233" viewBox="0 0 3207 233" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3199 195.017C3199 195.017 3146.68 113.04 3091.36 101.838C3036.05 90.6362 2993.2 156.32 2947.35 195.017C2901.51 233.714 2716.92 223.176 2694.71 101.838C2672.5 -19.5001 2629 5.84719 2560.5 58.9998C2492 112.152 2408 72.9999 2290 18C2172 -36.9999 2186.95 205.847 2079.48 222.174C1972 238.5 1917.95 133.916 1848.5 102.012C1779.05 70.1076 1746 116.332 1723 133.916C1700 151.5 1649 222.174 1550.5 222.174C1452 222.174 1445 18 1371.5 18C1298 18 1258.5 222.174 1136 222.174C1013.5 222.174 1031 18 928 18C825 18 861 195.017 720.5 195.017C580 195.017 566 18 471 18C376 18 401 195.017 293 195.017C185 195.017 238 18 152 18C66 18 9.5 195.017 9.5 195.017" stroke="#33B577" stroke-width="18"/>
+        </svg>                            
+      </section>
+      <section class="visit section-pad-top">
+        <div class="container">
+          <div class="visit__container">
+            <h2 class="visit__title title-blue title-indent">Бережный и&nbsp;внимательный осмотр на&nbsp;дому</h2>
+            <div class="visit__cards">
+              <div class="visit__card">
+                <div class="visit__heading visit__item">
+                  <h4 class="visit__caption">Консультация по телефону</h4>
+                  <div class="visit__icon"><img src="@img/phone.svg" alt=""></div>
+                </div>
+                <div class="visit__txt visit__item">Уточняем жалобы и подбираем необходимого специалиста</div>
+              </div>
+              <div class="visit__card">
+                <div class="visit__heading visit__item">
+                  <h4 class="visit__caption">Приезд доктора на дом</h4>
+                  <div class="visit__icon"><img src="@img/doctor.svg" alt=""></div>
+                </div>
+                <div class="visit__txt visit__item">Врач приедет вовремя в согласованное время</div>
+              </div>
+              <div class="visit__card">
+                <div class="visit__heading visit__item">
+                  <h4 class="visit__caption">Осмотр и диагностика</h4>
+                  <div class="visit__icon"><img src="@img/medicine.svg" alt=""></div>
+                </div>
+                <div class="visit__txt visit__item">Сбор анамнеза, жалоб, осмотр пациента</div>
+              </div>
+              <div class="visit__card">
+                <div class="visit__heading visit__item">
+                  <h4 class="visit__caption">Установка диагноза</h4>
+                  <div class="visit__icon"><img src="@img/file.svg" alt=""></div>
+                </div>
+                <div class="visit__txt visit__item">На основе осмотра и анамнеза, доктор установит диагноз и лечение</div>
+              </div>
+              <div class="visit__card">
+                <div class="visit__heading visit__item">
+                  <h4 class="visit__caption">Оцифровка и контроль</h4>
+                  <div class="visit__icon"><img src="@img/info.svg" alt=""></div>
+                </div>
+                <div class="visit__txt visit__item">Все проверим и предоставим вам в удобном цифровом формате</div>
+              </div>
+              <div class="visit__card">
+                <div class="visit__heading visit__item">
+                  <h4 class="visit__caption">Помощь и сопровождение</h4>
+                  <div class="visit__icon"><img src="@img/group.svg" alt=""></div>
+                </div>
+                <div class="visit__txt visit__item">Будем на связи весь период лечения</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services section-pad-top">
+        <div class="container">
+          <div class="services__container">
+            <h2 class="services__title title-blue title-indent">Сопровождаем до&nbsp;полного выздоровления</h2>
+            <div class="services__cards">
+              <div class="services__card">
+                <h4 class="services__caption">Стационар на дому</h4>
+                <div class="services__txt">Организуем постоянное наблюдение врача за&nbsp;пациентом, организуем и&nbsp;корректируем лечение</div>
+                <div class="services__img"><img src="@img/icon-1.png" alt=""></div>
+              </div>
+              <div class="services__card">
+                <h4 class="services__caption">Патронажная служба</h4>
+                <div class="services__txt">Ухаживаем за&nbsp;пациентом, обеспечиваем полный комфорт, заботу и&nbsp;поддержку пациента</div>
+                <div class="services__img"><img src="@img/icon-2.png" alt=""></div>
+              </div>
+              <div class="services__card">
+                <h4 class="services__caption">Госпитализация больного</h4>
+                <div class="services__txt">Экстренная и&nbsp;плановая госпитализация в&nbsp;коммерческие стационары возможна 24/7</div>
+                <div class="services__img"><img src="@img/icon-3.png" alt=""></div>
+              </div>
+            </div>
+            <div class="services__back"><img src="@img/image-2.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback section-pad-top">
+        <div class="container">
+          <div class="feedback__container anim-svg">
+            <div class="feedback__wrap">
+              <span class="feedback__plate">Онлайн-запись</span>
+              <h3 class="feedback__title">Записаться на&nbsp;прием</h3>
+              <div class="feedback__desc">На&nbsp;основе осмотра и&nbsp;собранного анамнеза, доктор устанавливает диагноз и&nbsp;лечение.</div>
+            </div>
+            <div class="feedback__form form">
+              <form action="">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <input type="submit" value="Вызвать врача" class="form__button button button_primary">
+                <span class="form__agreement">Нажимая на кнопку “Оставить заявку”, вы даете <a href="" target="_blank">согласие на обработку персональных данных</a></span>
+              </form>
+            </div>
+            <svg class="back-svg" width="698" height="234" viewBox="0 0 698 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 147.386C5 147.386 54.9446 119.813 150.579 119.813C246.214 119.813 265.112 225 321.805 225C378.499 225 446.073 147.386 446.073 147.386L543.999 50.3691C543.999 50.3691 587.521 1.3499 639.633 10.0304C691.746 18.7109 692.891 68.2399 686.019 119.813C679.147 171.386 649.369 225 649.369 225" stroke="#33B577" stroke-width="17"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="sick-leave section-pad-top anim-svg">
+        <div class="container">
+          <div class="sick-leave__container">
+            <h2 class="sick-leave__title title-blue title-indent">Выдаем больничные листы</h2>
+            <div class="sick-leave__wrap">
+              <div class="sick-leave__img"><img src="@img/image-3.png" alt=""></div>
+              <div class="sick-leave__box">
+                <h3 class="sick-leave__caption">Всего 3&nbsp;шага до&nbsp;больничного</h3>
+                <div class="sick-leave__txt">Противоположная точка зрения подразумевает, что предприниматели в&nbsp;сети интернет будут разоблачены.</div>
+                <ol class="sick-leave__list">
+                  <li class="sick-leave__item">Выезжаем на&nbsp;дом к&nbsp;заболевшему человеку</li>
+                  <li class="sick-leave__item">Оформляем электронный листок нетрудоспособности (ЭЛН)</li>
+                  <li class="sick-leave__item">Уведомление об&nbsp;открытии, продлении или закрытии ЭЛН приходят в&nbsp;личный кабинет Госуслуг в&nbsp;течение 2-ух дней</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>    
+        <svg class="back-svg" width="2707" height="466" viewBox="0 0 2707 466" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2706 458.024C2666.93 463.035 2639 458.024 2608.78 448.521C2578.55 439.018 2549.67 405.751 2534.73 358.992C2516.24 298.423 2490.9 243.955 2469.75 228.95C2448.59 213.945 2432.97 217.446 2408.29 234.452C2383.61 251.457 2362.45 278.966 2329.2 287.969C2295.95 296.972 2269.26 267.463 2269.26 267.463C2269.26 267.463 2242.18 236.332 2223.92 178.934C2220.3 155.506 2218.78 149.191 2216.36 117.914C2216.36 117.914 2212.84 83.9027 2227.45 80.4016C2242.05 76.9004 2252.13 111.412 2252.13 111.412C2252.13 111.412 2284.37 86.4035 2292.93 93.4058C2301.5 100.408 2287.39 121.915 2276.31 133.919C2265.23 145.923 2217.87 186.436 2189.16 203.942C2160.45 221.447 2020.39 299.768 1892.46 366.495C1892.46 366.495 1712.12 468.028 1678.87 420.012C1645.62 371.996 1719.67 254.458 1669.8 171.931C1649.36 141.51 1632.02 128.668 1600.79 138.671C1569.56 148.674 1547.39 267.463 1470.32 267.463C1393.25 267.463 1361.28 209.59 1353.74 178.934C1346.2 148.277 1314.54 36.1523 1263.79 57.1447C1213.04 78.1371 1237.16 386.526 1094.94 386.526C952.734 386.526 978.864 61.1433 877.859 57.1447C776.854 53.1461 784.392 348.04 679.367 178.934C574.342 9.8271 447.206 -27.3249 393.94 33.1533C340.673 93.6316 388.915 287.969 249.719 287.969C110.523 287.969 6 8.16232 6 8.16232" stroke="#33B577" stroke-width="12"/>
+        </svg>             
+      </section>
+      <section class="difference section-pad-top">
+        <div class="container">
+          <div class="difference__container ">
+            <h2 class="difference__title title-blue title-indent">Отличие Family Medical от&nbsp;других сервисов</h2>
+            <div class="difference__table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Содержание:</th>
+                    <th>Family Medical</th>
+                    <th>Врач частной практики</th>
+                    <th>Корпоративная страховка</th>
+                    <th>Частная клиника</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- статусы: confirm-зеленый, fail-красный, ambiguity-серый -->
+                  <tr>
+                    <td>Выезд врача на&nbsp;дом&nbsp;&mdash; врач приедет в&nbsp;удобное для вас время</td>
+                    <td class="difference__status"><span class="confirm"></span></td>
+                    <td class="difference__status"><span class="confirm"></span></td>
+                    <td class="difference__status"><span class="fail"></span></td>
+                    <td class="difference__status"><span class="fail"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Удобство и&nbsp;безопасность&nbsp;&mdash; Без ожидания, без очереди, без риска дополнительного заражения</td>
+                    <td class="difference__status"><span class="confirm"></span></td>
+                    <td class="difference__status"><span class="ambiguity"></span></td>
+                    <td class="difference__status"><span class="fail"></span></td>
+                    <td class="difference__status"><span class="fail"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Поддержка 24/7&nbsp;&mdash; сопровождение во&nbsp;время всего цикла лечения входит в&nbsp;стоимость первичного приема</td>
+                    <td class="difference__status"><span class="confirm"></span></td>
+                    <td class="difference__status"><span class="ambiguity"></span></td>
+                    <td class="difference__status"><span class="ambiguity"></span></td>
+                    <td class="difference__status"><span class="fail"></span></td>
+                  </tr>
+                  <tr class="hidden">
+                    <td>Выезд врача на&nbsp;дом&nbsp;&mdash; врач приедет в&nbsp;удобное для вас время</td>
+                    <td class="difference__status"><span class="confirm"></span></td>
+                    <td class="difference__status"><span class="confirm"></span></td>
+                    <td class="difference__status"><span class="fail"></span></td>
+                    <td class="difference__status"><span class="fail"></span></td>
+                  </tr>
+                  <tr class="hidden">
+                    <td>Удобство и&nbsp;безопасность&nbsp;&mdash; Без ожидания, без очереди, без риска дополнительного заражения</td>
+                    <td class="difference__status"><span class="confirm"></span></td>
+                    <td class="difference__status"><span class="ambiguity"></span></td>
+                    <td class="difference__status"><span class="fail"></span></td>
+                    <td class="difference__status"><span class="fail"></span></td>
+                  </tr>
+                  <tr class="hidden">
+                    <td>Поддержка 24/7&nbsp;&mdash; сопровождение во&nbsp;время всего цикла лечения входит в&nbsp;стоимость первичного приема</td>
+                    <td class="difference__status"><span class="confirm"></span></td>
+                    <td class="difference__status"><span class="ambiguity"></span></td>
+                    <td class="difference__status"><span class="ambiguity"></span></td>
+                    <td class="difference__status"><span class="fail"></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="difference__buttons">
+              <a class="difference__button button button_primary btn-display">Показать еще</a>
+              <a class="difference__button button button_primary btn-hide">Скрыть</a>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section class="guarantees section-pad-top">
+        <div class="container">
+          <div class="guarantees__container swiper-box">
+            <h2 class="guarantees__title title-blue title-indent">Family Medical гарантирует</h2>
+            <div class="guarantees__wrap">
+              <div class="guarantees__img"><img src="@img/image-4.png" alt=""></div>
+              <div class="swiper mobileSwiper">
+                <div class="guarantees__cards swiper-wrapper">
+                  <div class="guarantees__card swiper-slide">
+                    <div class="guarantees__icon"><img src="@img/file-blue.svg" alt=""></div>
+                    <h5 class="guarantees__caption">Больничный и&nbsp;необходимые рецепты сразу</h5>
+                    <div class="guarantees__txt">Врач, при необходимости, может выписать рецепт и&nbsp;открыть электронный лист временной нетрудоспособности</div>
+                  </div>
+                  <div class="guarantees__card swiper-slide">
+                    <div class="guarantees__icon"><img src="@img/pills.svg" alt=""></div>
+                    <h5 class="guarantees__caption">Только обоснованные назначения</h5>
+                    <div class="guarantees__txt">Назначаем только необходимые анализы и&nbsp;лекарственные препараты</div>
+                  </div>
+                  <div class="guarantees__card swiper-slide">
+                    <div class="guarantees__icon"><img src="@img/bed.svg" alt=""></div>
+                    <h5 class="guarantees__caption">Постоянная связь на&nbsp;протяжении всего лечения</h5>
+                    <div class="guarantees__txt">Вы&nbsp;можете проконсультироваться по&nbsp;любому вопросу с&nbsp;колл-центром, при необходимости мы&nbsp;свяжем вас с&nbsp;врачом</div>
+                  </div>
+                  <div class="guarantees__card swiper-slide">
+                    <div class="guarantees__icon"><img src="@img/sofa.svg" alt=""></div>
+                    <h5 class="guarantees__caption">Отсутствие стресса от&nbsp;больничной обстановки</h5>
+                    <div class="guarantees__txt">Консультация проходит в&nbsp;комфорте, дома, в&nbsp;привычной обстановке</div>
+                  </div>
+                </div>
+              </div>
+              <div class="guarantees__arrows">
+                <div class="button-prev guarantees-button guarantees-button-prev">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.22579 17.8195C9.44376 18.0602 9.80654 18.0602 10.0321 17.8195C10.2501 17.587 10.2501 17.2001 10.0321 16.9681L5.94347 12.607H19.4355C19.75 12.6064 20 12.3398 20 12.0043C20 11.6689 19.75 11.3936 19.4355 11.3936H5.94347L10.0321 7.04056C10.2501 6.79993 10.2501 6.41243 10.0321 6.18047C9.80654 5.93984 9.44325 5.93984 9.22579 6.18047L4.1692 11.574C3.9436 11.8065 3.9436 12.1935 4.1692 12.4254L9.22579 17.8195Z" fill="white"/>
+                  </svg>                  
+                </div>
+                <div class="button-next guarantees-button guarantees-button-next">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.7742 17.8195C14.5562 18.0602 14.1935 18.0602 13.9679 17.8195C13.7499 17.587 13.7499 17.2001 13.9679 16.9681L18.0565 12.607H4.5645C4.24998 12.6064 4 12.3398 4 12.0043C4 11.6689 4.24998 11.3936 4.5645 11.3936H18.0565L13.9679 7.04056C13.7499 6.79993 13.7499 6.41243 13.9679 6.18047C14.1935 5.93984 14.5567 5.93984 14.7742 6.18047L19.8308 11.574C20.0564 11.8065 20.0564 12.1935 19.8308 12.4254L14.7742 17.8195Z" fill="white"/>
+                  </svg>                  
+                </div>
+              </div>
+            </div>
+            <a class="guarantees__button button button_primary popup-btn">Вызвать врача</a>
+          </div>
+        </div>
+      </section>
+      <section class="about section-pad-top">
+        <div class="container">
+          <div class="about__container">
+            <h2 class="about__title title-blue title-indent">Family Medical</h2>
+            <div class="about__wrap">
+              <div class="about__box">
+                <div class="about__desc">
+                  <p>Принимая во&nbsp;внимание показатели успешности, постоянный количественный рост и&nbsp;сфера нашей активности влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации поставленных обществом задач. В&nbsp;своём стремлении улучшить пользовательский опыт мы&nbsp;упускаем, что независимые государства превращены в&nbsp;посмешище, хотя само их&nbsp;существование приносит несомненную пользу обществу. Но&nbsp;дальнейшее развитие различных форм деятельности прекрасно подходит для реализации своевременного выполнения сверхзадачи.</p>
+                </div>
+                <div class="about__quote">
+                  <p>&quot; Family Medical была создана с&nbsp;одной целью&nbsp;&mdash; сделать качественную медицинскую помощь не&nbsp;выходя из&nbsp;дома. Мы&nbsp;понимаем, как важно для родителей получать помощь для своих детей в&nbsp;комфортной и&nbsp;безопасной обстановке. &quot;</p>
+                </div>
+              </div>
+              <div class="about__certificate">
+                <div class="about__top">
+                  <h4 class="about__caption">Сертификаты</h4>
+                  <div class="about__arrows">
+                    <div class="about-button about-button-prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.22579 17.8195C9.44376 18.0602 9.80654 18.0602 10.0321 17.8195C10.2501 17.587 10.2501 17.2001 10.0321 16.9681L5.94347 12.607H19.4355C19.75 12.6064 20 12.3398 20 12.0043C20 11.6689 19.75 11.3936 19.4355 11.3936H5.94347L10.0321 7.04056C10.2501 6.79993 10.2501 6.41243 10.0321 6.18047C9.80654 5.93984 9.44325 5.93984 9.22579 6.18047L4.1692 11.574C3.9436 11.8065 3.9436 12.1935 4.1692 12.4254L9.22579 17.8195Z" fill="#121111"/>
+                      </svg>                  
+                    </div>
+                    <div class="about-button about-button-next">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.7742 17.8195C14.5562 18.0602 14.1935 18.0602 13.9679 17.8195C13.7499 17.587 13.7499 17.2001 13.9679 16.9681L18.0565 12.607H4.5645C4.24998 12.6064 4 12.3398 4 12.0043C4 11.6689 4.24998 11.3936 4.5645 11.3936H18.0565L13.9679 7.04056C13.7499 6.79993 13.7499 6.41243 13.9679 6.18047C14.1935 5.93984 14.5567 5.93984 14.7742 6.18047L19.8308 11.574C20.0564 11.8065 20.0564 12.1935 19.8308 12.4254L14.7742 17.8195Z" fill="#121111"/>
+                      </svg>                  
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper certificateSwiper">
+                  <div class="swiper-wrapper">
+                    <a class="swiper-slide about__img" data-fancybox="certificate" href="@img/crtificate.jpg"><img src="@img/crtificate.jpg" alt=""></a>
+                    <a class="swiper-slide about__img" data-fancybox="certificate" href="@img/crtificate.jpg"><img src="@img/crtificate.jpg" alt=""></a>
+                    <a class="swiper-slide about__img" data-fancybox="certificate" href="@img/crtificate.jpg"><img src="@img/crtificate.jpg" alt=""></a>
+                    <a class="swiper-slide about__img" data-fancybox="certificate" href="@img/crtificate.jpg"><img src="@img/crtificate.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="teams section-pad">
+        <div class="container">
+          <div class="teams__container">
+            <div class="teams__top">
+              <h2 class="teams__title title-blue">Присоединяйтесь к команде Family Medical</h2>
+              <div class="teams__desc">
+                <p>"Создаём медицину будущего вместе – заботясь о пациентах и поддерживая врачей."</p>
+              </div>
+            </div>
+            <div class="teams__cards">
+              <div class="teams__card">
+                <div class="teams__img"><img src="@img/image-5-1.png" alt=""></div>
+                <h4 class="teams__caption">Безопасные условия для пациентов и&nbsp;врачей</h4>
+                <div class="teams__txt">Мы&nbsp;обеспечиваем комфорт и&nbsp;безопасность каждому нашему пациенту и&nbsp;врачу. Ваши навыки и&nbsp;опыт будут использованы в&nbsp;спокойной домашней обстановке, минимизируя стресс и&nbsp;риски.</div>
+              </div>
+              <!-- вторая карточка отличается -->
+              <div class="teams__card anim-svg">
+                <div class="teams__vector">
+                  <svg width="425" height="309" viewBox="0 0 425 309" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.2069 278.984C12.2069 278.984 50.9991 349.9 69.9991 237.179C77.6097 192.028 69.0956 167.904 56.1535 155.207C34.3858 133.851 7.5 164.459 7.5 194.953V200.753C7.5 227.268 25.964 249.211 52.4354 247.701C63.4634 247.072 74.9659 245.98 85.8286 244.732C110.799 241.863 129.956 206.356 149.367 190.388V190.388C176.414 168.138 202.19 160.659 219.295 160.659C236.399 160.659 260.851 160.399 266.08 190.106C271.31 219.814 248.135 232.351 233.381 229.083C218.627 225.814 206.209 217.64 200.178 196.05C194.147 174.461 192.026 152.165 204.706 110.639C217.386 69.1129 233.987 41.6957 236.399 37.9684C238.811 34.2412 258.499 -2.02479 296.457 10.6916C334.415 23.4081 342.014 62.5015 346.752 81.3413C351.49 100.181 353.394 110.639 361.162 129.986C366.29 142.76 373.341 148.741 379.825 151.371C390.498 155.702 402.771 152.165 414.289 152.165H424.5" stroke="#3EEBB6" stroke-width="15"/>
+                  </svg>                    
+                </div>
+                <h4 class="teams__caption">Гибкий график и удобный формат работы</h4>
+                <div class="teams__txt">Работайте по гибкому расписанию, которое учитывает ваши предпочтения и нагрузку, а также позволяет сосредоточиться на каждом пациенте без спешки.</div>
+              </div>
+              <div class="teams__card">
+                <!-- не выводить картинку если пусто -->
+                <!-- <div class="teams__img"><img src="" alt=""></div> -->
+                <h4 class="teams__caption">Поддержка на&nbsp;всех этапах лечения</h4>
+                <div class="teams__txt">Мы&nbsp;ценим труд врачей и&nbsp;предоставляем полное сопровождение: от&nbsp;подготовки визита до&nbsp;взаимодействия с&nbsp;пациентом и&nbsp;оформления всех документов.</div>
+              </div>
+              <div class="teams__card">
+                <!-- не выводить картинку если пусто -->
+                <!-- <div class="teams__img"><img src="" alt=""></div> -->
+                <h4 class="teams__caption">Постоянное профессиональное развитие</h4>
+                <div class="teams__txt">Family Medical предоставляет врачам доступ 
+                  к&nbsp;обучению и&nbsp;профессиональному развитию, чтобы вы&nbsp;всегда могли расти и&nbsp;совершенствоваться вместе с&nbsp;нами.</div>
+              </div>
+              <div class="teams__card">
+                <!-- добавить класс teams__icon если иконка -->
+                <div class="teams__img teams__icon"><img src="@img/sustainable.svg" alt=""></div>
+                <h4 class="teams__caption">Стабильность и&nbsp;прозрачные условия</h4>
+                <div class="teams__txt">Мы&nbsp;предлагаем стабильное сотрудничество с&nbsp;прозрачной системой оплаты и&nbsp;поддерживаем высокие стандарты сервиса, обеспечивая нашим врачам и&nbsp;пациентам уверенность в&nbsp;завтрашнем дне.</div>
+              </div>
+              <div class="teams__card">
+                <!-- добавить класс teams__icon если иконка -->
+                <div class="teams__img teams__icon"><img src="@img/recognition.svg" alt=""></div>
+                <h4 class="teams__caption">Высокий уровень доверия и&nbsp;признания клиентов</h4>
+                <div class="teams__txt">Наши клиенты ценят профессионализм и&nbsp;заботу наших врачей. Присоединившись к&nbsp;Family Medical, вы&nbsp;становитесь частью команды, которая вызывает доверие у&nbsp;семей, обеспечивая здоровую и&nbsp;безопасную среду для детей.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/popup.html') 
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

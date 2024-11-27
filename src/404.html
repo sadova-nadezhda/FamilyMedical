@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "404" })
+  <body>
+    @@include('html/header.html', { "class": "blue" })
+
+    <main>
+      <section class="page-error">
+        <div class="container">
+            <div class="page-error__container section-pad">
+              <div class="page-error__box">
+                <h1 class="page-error__title title-blue">Упс! Страница недоступна.</h1>
+                <div class="page-error__txt">Cтраница, которую вы ищете, не найдена. Вы можете обновить страницу через:</div>
+                <div class="page-error__group">
+                  <a href="/" class="page-error__button button button_primary">Обновить страницу</a>
+                  <div class="page-error__counter">00:00:05</div>
+                </div>
+              </div>
+              <div class="page-error__num">
+                <span>404</span>
+                <span>404</span>       
+              </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/popup.html') 
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>
