@@ -6,6 +6,9 @@
 @import "footer.scss";
 
 // Global Styles
+section {
+  overflow: hidden;
+}
 .section {
   &-pad {
     padding: 150px 0;
@@ -140,6 +143,11 @@
   }
   &__btn {
     min-width: 315px;
+    &:hover {
+      transition-duration: 0.3s !important;
+      transition-delay: 0s !important;
+      transition-timing-function: ease-out !important;
+    }
     @media (max-width: 980px) {
       position: absolute;
       bottom: 0;
@@ -186,6 +194,9 @@
     transition: color 0.3s ease-out, background-color 0.3s ease-out, backdrop-filter 0.3s ease-out;
     &:hover {
       cursor: pointer;
+      transition-duration: 0.3s !important;
+      transition-delay: 0s !important;
+      transition-timing-function: ease-out !important;
       color: var(--light, $light);
       background-color: rgba(255, 255, 255, 0.35);
       backdrop-filter: blur(17.5px);
@@ -294,6 +305,9 @@
     &:hover {
       color: var(--light, $light);
       background-color: var(--green, $green);
+      transition-duration: 0.3s !important;
+      transition-delay: 0s !important;
+      transition-timing-function: ease-out !important;
     }
   }
   &__box {
@@ -509,6 +523,9 @@
     &:hover {
       color: var(--light, $light);
       background-color: var(--green, $green);
+      transition-duration: 0.3s !important;
+      transition-delay: 0s !important;
+      transition-timing-function: ease-out !important;
     }
     @media (max-width: 980px) {
       padding: 12px 24px;
@@ -625,6 +642,7 @@
 }
 
 .feedback {
+  padding-top: 24px;
   &__container {
     position: relative;
     display: flex;
@@ -931,13 +949,14 @@
     }
     td {
       padding: 32px;
-      background: #F7FFF7;
       @media (max-width: 1200px) {
         padding: 22px;
       }
     }
     tbody {
       tr {
+        background: #F7FFF7;
+        transition: background 0.3s ease-out;
         td {
           &:first-of-type {
             min-width: 260px;
@@ -945,6 +964,9 @@
         }
         &.hidden {
           display: none;
+        }
+        &:hover {
+          background: #E9FFE9;
         }
       }
     }

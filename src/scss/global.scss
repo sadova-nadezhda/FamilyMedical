@@ -28,6 +28,10 @@ html {
   }
 }
 
+html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+  transition-property: all;
+}
+
 *,
 *::before,
 *::after {
@@ -170,6 +174,9 @@ input {
   }
   &:hover:not(:disabled) {
     cursor: pointer;
+    transition-duration: 0.3s !important;
+    transition-delay: 0s !important;
+    transition-timing-function: ease-out !important;
   }
   &:disabled {
     opacity: 0.5;
