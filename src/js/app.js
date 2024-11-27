@@ -165,22 +165,27 @@ window.addEventListener("load", function () {
     })
     .mask("+7 (999) 999-99-99");
 
-    // hide-show
-    const btnHide = document.querySelector(".difference .btn-hide");
-    const btnDisplay = document.querySelector(".difference .btn-display");
-    const hiddenElements = document.querySelectorAll(".difference__table .hidden");
-  
-    btnHide.addEventListener("click", function () {
-      hiddenElements.forEach(element => element.style.display = "none");
-      btnHide.style.display = "none";
-      btnDisplay.style.display = "block";
-    });
-  
-    btnDisplay.addEventListener("click", function () {
-      hiddenElements.forEach(element => element.style.display = "table-row");
-      btnHide.style.display = "block";
-      btnDisplay.style.display = "none";
-    });
+  // hide-show
+  const btnHide = document.querySelector(".difference .btn-hide");
+  const btnDisplay = document.querySelector(".difference .btn-display");
+  const hiddenElements = document.querySelectorAll(".difference__table .hidden");
+
+  btnHide.addEventListener("click", function () {
+    hiddenElements.forEach(element => element.style.display = "none");
+    btnHide.style.display = "none";
+    btnDisplay.style.display = "block";
+  });
+
+  btnDisplay.addEventListener("click", function () {
+    hiddenElements.forEach(element => element.style.display = "table-row");
+    btnHide.style.display = "block";
+    btnDisplay.style.display = "none";
+  });
+
+  // AOS animate
+  AOS.init({
+    duration: 1200,
+  });
 
 });
 
