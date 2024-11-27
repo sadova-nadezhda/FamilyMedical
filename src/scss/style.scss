@@ -378,6 +378,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 28px;
+    overflow: hidden;
     &::after {
       content: '';
       position: absolute;

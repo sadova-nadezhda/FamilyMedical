@@ -20,8 +20,7 @@ window.addEventListener("load", function () {
       let target = e.target;
       if (
         !target.classList.contains("header__nav") &&
-        !target.classList.contains("header__burger") &&
-        !target.classList.contains("dropdown__link")
+        !target.classList.contains("header__burger")
       ) {
         link.classList.remove("active");
         menu.classList.remove("open");
@@ -39,7 +38,7 @@ window.addEventListener("load", function () {
         svg.classList.add('animate');
         let color = svg.classList.contains('teams__card') ? '#3EEBB6' : '#33B577';
 
-        const paths = svg.querySelectorAll('path');
+        const paths = svg.querySelectorAll('.back-svg path');
         paths.forEach((path) => {
           const length = path.getTotalLength();
           path.style.strokeDasharray = length;
